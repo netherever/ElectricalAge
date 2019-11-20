@@ -608,6 +608,7 @@ public class Eln {
         PortableOreScannerItem.RenderStorage.blockKeyFactor = null;
         oreScannerConfig.clear();
         if (addOtherModOreToXRay) {
+            oreScannerConfig.add(new OreScannerConfigElement(65534, 0.15f));
             for (String name : OreDictionary.getOreNames()) {
                 if (name == null)
                     continue;
